@@ -1,0 +1,94 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.banner {
+    position: relative;
+    background-image: url('../week_1/source/9.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    box-shadow: inset 0 -100px 100px -10px rgba(0,0,0,0.9);
+}
+
+.top {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: 120px;
+    margin-top: -20px;
+}
+
+.profile {
+    height: 30px;
+    width: 30px;
+    margin-top: -20px;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+.banner-content h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    transform: translateY(-80px);
+}
+
+.banner button {
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(40, 40, 40, 0.2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+    transform: translateY(-90px);
+}
+
+.banner-content p {
+    line-height: 1.5;
+    font-size: 11px;
+    font-weight: bold;
+    transform: translateY(-90px);
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 1rem;
+}
+
+.movie-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 3rem;
+    padding: 0 3rem 2rem;
+}
+
+.poster {
+    flex: 0 0 auto;
+    width: 130px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.poster:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
