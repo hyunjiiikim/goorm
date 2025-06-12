@@ -28,6 +28,10 @@ class UI {
         </div>
         <h3 class="page-heading mb-3">Latest Repos</h3>
         <div id="repos"></div>
+        <h3 class="page-heading mb-3">GitHub Contributions</h3>
+        <div>
+            <img src="https://ghchart.rshah.org/${user.login}" alt="GitHub Contributions">
+        </div>
     `;
     }
 
