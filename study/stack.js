@@ -50,3 +50,4 @@ stack.pop();
 stack.peek();
 stack.pop();
 stack.print();
+
