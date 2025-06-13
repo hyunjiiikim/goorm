@@ -4,11 +4,11 @@
 
 class Stack {
     constructor() { //생성자 함수
-        this.item = [];
+        this.element = [];
     }
 
     push(element) {
-        this.item.push(element);
+        this.element.push(element);
         console.log('push : ' + element);
     }
 
@@ -17,23 +17,23 @@ class Stack {
             console.log('Empty!');
             return;
         }
-        console.log('pop : ' + this.item.pop());
+        console.log('pop : ' + this.element.pop());
     }
 
     isEmpty() {
-        return this.item.length === 0;
+        return this.element.length === 0;
     }
 
     peek() {
-        console.log('top element :' + this.item[this.item.length - 1]); //배열 인덱스 0부터 시작이라 -1, this.item.length 자체는 값이 아닌 인덱스라 this.item[]으로 묶어줘야 함
+        console.log('top element :' + this.element[this.element.length - 1]); //배열 인덱스 0부터 시작이라 -1, this.item.length 자체는 값이 아닌 인덱스라 this.item[]으로 묶어줘야 함
     }
 
     clear() {
-        this.item = [];
+        this.element = [];
     }
 
     print() {
-        console.log('stack : ' + this.item.join(', '));
+        console.log('stack : ' + this.element.join(', '));
     }
 }
 
