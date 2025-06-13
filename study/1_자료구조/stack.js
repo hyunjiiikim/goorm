@@ -25,7 +25,7 @@ class Stack {
     }
 
     peek() {
-        console.log('top element :' + this.element[this.element.length - 1]); //배열 인덱스 0부터 시작이라 -1, this.item.length 자체는 값이 아닌 인덱스라 this.item[]으로 묶어줘야 함
+        console.log('top element :' + this.element[this.element.length - 1]); //배열 인덱스 0부터 시작이라 -1, this.element.length 자체는 값이 아닌 인덱스라 this.element[]으로 묶어줘야 함
     }
 
     clear() {
