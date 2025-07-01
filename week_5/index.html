@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Spreadsheet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="exportBtn">Export Spreadsheet</button>
+  <p id="cellInfo">Cell: </p>
+  <table id="spreadsheet">
+    <thead>
+      <tr>
+        <th></th>
+        <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th>
+      </tr>
+    </thead>
+    <tbody>
+      <script>
+        for (let i = 1; i <= 9; i++) {
+          document.write(`<tr><th>${i}</th>`);
+          for (let j = 0; j < 9; j++) {
+            const colLetter = String.fromCharCode(65 + j);
+            document.write(`<td contenteditable="true" data-row="${i}" data-col="${colLetter}"></td>`);
+          }
+          document.write(`</tr>`);
+        }
+      </script>
+    </tbody>
+  </table>
+
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
