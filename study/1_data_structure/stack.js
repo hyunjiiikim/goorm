@@ -9,7 +9,7 @@ class Stack {
 
     push(element) {
         this.element.push(element);
-        console.log('push : ' + element);
+        console.log('push : ' + element); 
     }
 
     pop() {
